@@ -34,7 +34,7 @@ with serial.Serial(port=usb_port, baudrate=usb_port_speed) as s:
 
 # save the file
 print('Writing file...')
-with open('results.csv', x) as f:
+with open('results.csv', 'x') as f:
     for row in measurements:
         f.write(F'{row[0]},{row[1]}\n')
 print("...done")
